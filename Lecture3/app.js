@@ -32,3 +32,14 @@ function sumButtonClicked(){
     sumFunc(numberOne,numberTwo)    
 
 }
+
+function generateTitle(instutitionName,courtName){
+
+    let title = `${instutitionName} KURULU’NA,
+Sunulmak Üzere
+${courtName} MAHKEMESİ SAYIN HAKİMLİĞİ’NE`
+
+    return title;
+}
+
+console.log(generateTitle("AMEAN Danışmanlık","Ezgi Yüksek"))
