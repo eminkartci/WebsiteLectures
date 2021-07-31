@@ -12,7 +12,7 @@ const eminem = 1345;
 
 // Functions
 function sumFunc(num1,num2){
-    let sum = num1+num2;
+    let sum = Number(num1)+Number(num2);
     console.log("Sum: ",sum)
 }
 
@@ -23,3 +23,12 @@ function mul(num1,num2){
 
 sumFunc(324,5321)
 mul(325,734)
+
+function sumButtonClicked(){
+
+    let numberOne = document.getElementById("num1").value;
+    let numberTwo = document.getElementById("num2").value;
+
+    sumFunc(numberOne,numberTwo)    
+
+}
